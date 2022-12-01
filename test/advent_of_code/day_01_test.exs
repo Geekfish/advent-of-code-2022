@@ -3,19 +3,31 @@ defmodule AdventOfCode.Day01Test do
 
   import AdventOfCode.Day01
 
-  @tag :skip
-  test "part1" do
-    input = nil
-    result = part1(input)
+  @example_input "1000
+  2000
+  3000
 
-    assert result
+  4000
+
+  5000
+  6000
+
+  7000
+  8000
+  9000
+
+  10000"
+
+  # @tag :skip
+  test "part1" do
+    result = part1(@example_input)
+
+    assert 24000 == result
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
-    result = part2(input)
+    result = part2(@example_input)
 
-    assert result
+    assert 45000 == result
   end
 end
