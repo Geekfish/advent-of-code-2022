@@ -3,19 +3,26 @@ defmodule AdventOfCode.Day03Test do
 
   import AdventOfCode.Day03
 
-  @tag :skip
-  test "part1" do
-    input = nil
-    result = part1(input)
+  @input """
+  vJrwpWtwJgWrhcsFMMfFFhFp
+  jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+  PmmdzqPrVvPwwTWBwg
+  wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+  ttgJtRGJQctTZtZT
+  CrZsJsPPZsGzwwsLwLmpwMDw
+  """
 
-    assert result
+  test "part1" do
+    result = part1(@input)
+
+    # 16 (p), 38 (L), 42 (P), 22 (v), 20 (t), and 19 (s)
+    assert 157 == result
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
-    result = part2(input)
+    result = part2(@input)
 
-    assert result
+    # 18 (r) for the first group and 52 (Z) for the second group
+    assert 70 == result
   end
 end
