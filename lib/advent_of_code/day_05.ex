@@ -73,7 +73,7 @@ defmodule AdventOfCode.Day05 do
   end
 
   defp move_to_stack(stacks, index, boxes) when is_list(boxes) do
-    Map.update(stacks, index, [boxes], fn stack -> boxes ++ stack end)
+    Map.update(stacks, index, boxes, fn stack -> boxes ++ stack end)
   end
 
   defp pop_from_stack(stacks, from, number \\ 1) do
